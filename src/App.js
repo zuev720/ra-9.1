@@ -4,9 +4,8 @@ import {Page} from './Components/Page/Page';
 import './App.css';
 
 export default function App() {
-    // console.log(process.env.REACT_APP_PUBLIC_URL + '/');
     return (
-        <Router basename={process.env.REACT_APP_PUBLIC_URL}>
+        <Router>
             <div>
                 <Menu/>
                 <div className="page">
