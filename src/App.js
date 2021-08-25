@@ -9,7 +9,7 @@ export default function App() {
             <div>
                 <Menu/>
                 <div className="page">
-                    <Route path={'/'} exact component={Page}/>
+                    <Route path={'/'} exact={true} component={Page}/>
                     <Route path={'/drift'} component={Page}/>
                     <Route path={'/timeattack'} component={Page}/>
                     <Route path={'/forza'} component={Page}/>
