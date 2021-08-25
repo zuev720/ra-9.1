@@ -4,15 +4,16 @@ import {Page} from './Components/Page/Page';
 import './App.css';
 
 export default function App() {
+    // console.log(process.env.REACT_APP_PUBLIC_URL + '/');
     return (
-        <Router>
+        <Router basename={process.env.REACT_APP_PUBLIC_URL}>
             <div>
                 <Menu/>
                 <div className="page">
-                    <Route path="/" exact component={Page}/>
-                    <Route path="/drift" component={Page}/>
-                    <Route path="/timeattack" component={Page}/>
-                    <Route path="/forza" component={Page}/>
+                    <Route path={'/'} exact component={Page}/>
+                    <Route path={'/drift'} component={Page}/>
+                    <Route path={'/timeattack'} component={Page}/>
+                    <Route path={'/forza'} component={Page}/>
                 </div>
             </div>
         </Router>
