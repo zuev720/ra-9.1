@@ -5,7 +5,7 @@ import './App.css';
 
 export default function App() {
     return (
-        <Router>
+        <Router basename={'/'}>
             <div>
                 <Menu/>
                 <div className="page">
